@@ -1,3 +1,7 @@
+## Hosted Link
+
+https://netflix-clone-3-cad67.web.app/
+
 # Netflix Clone 3.0
 
 ![Netflix Clone](https://www.freepnglogos.com/uploads/netflix-logo-drawing-png-19.png)
@@ -33,7 +37,7 @@ Netflix Clone 3.0 is a web application built using React.js, TMDB's API, and Fir
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/netflix-clone-3.0.git`
+1. Clone the repository: `git clone https://github.com/Damon248/netflix-clone-3.git`
 2. Navigate to the project directory: `cd netflix-clone-3.0`
 3. Install dependencies: `npm install`
 
@@ -58,7 +62,3 @@ _Profile Screen_
 ## Contributing
 
 Contributions are welcome! If you find any issues or want to enhance the application, please submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
