@@ -46,13 +46,13 @@ Netflix Clone 3.0 is a web application built using React.js, TMDB's API, and Fir
 
 ## Screenshots
 
-![Login Screen](./public/assets/login.png)
+![Login Screen](public/assets/login.png)
 _Login Screen_
 
-![Home Screen](./public/assets/home.png)
+![Home Screen](public/assets/home.png)
 _Home Screen_
 
-![Profile Screen](./public/assets/profile.png)
+![Profile Screen](public/assets/profile.png)
 _Profile Screen_
 
 ## Contributing
