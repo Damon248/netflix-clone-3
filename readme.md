@@ -1,6 +1,6 @@
 # Netflix Clone 3.0
 
-![Netflix Clone](./path/to/screenshot.png)
+![Netflix Clone](https://www.freepnglogos.com/uploads/netflix-logo-drawing-png-19.png)
 
 ## Description
 
