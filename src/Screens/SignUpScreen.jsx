@@ -6,10 +6,12 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../../firebase";
+import { useNavigate } from "react-router-dom";
 
 function SignUpScreen() {
   const emailRef = React.useRef(null);
   const passwordRef = React.useRef(null);
+  const navigate = useNavigate();
 
   const signIn = (e) => {
     e.preventDefault();
@@ -20,6 +22,8 @@ function SignUpScreen() {
     )
       .then((userCredential) => {
         console.log(userCredential.user);
+        // ? on login success redirecting to the home ("/")
+        navigate("/");
       })
       .catch((error) => {
         alert(error.message);
@@ -35,6 +39,8 @@ function SignUpScreen() {
     )
       .then((userCredential) => {
         console.log(userCredential.user);
+        // ? on login success redirecting to the home ("/")
+        navigate("/");
       })
       .catch((error) => {
         alert(error.message);

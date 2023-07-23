@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import HomeScreen from "./Screens/HomeScreen";
 import {
@@ -34,7 +34,6 @@ function App() {
     return unsubscribe;
   }, [dispatch]);
 
-  console.log("user", user);
   const Root = () => {
     return (
       <>
@@ -50,16 +49,15 @@ function App() {
       <div className="app">
         <Router>
           <Routes>
-            <Route path="/" element={<Root />}>
-              {!user ? (
-                <Route path="/" element={<LoginScreen />} />
-              ) : (
-                <>
-                  <Route index element={<HomeScreen />} />
-                  <Route path="/profile" element={<ProfileScreen />} />
-                </>
-              )}
-            </Route>
+            {!user ? (
+              <Route path="*" element={<LoginScreen />} />
+            ) : (
+              <>
+                <Route index element={<HomeScreen />} />
+                <Route path="/profile" element={<ProfileScreen />} />
+                <Route path="*" element={<ProfileScreen />} />
+              </>
+            )}
           </Routes>
         </Router>
       </div>
